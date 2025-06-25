@@ -1,0 +1,22 @@
+{
+    // Indique que ce package n'est pas destiné à être publié sur npm
+    "private": true,
+    // Spécifie que nous utilisons les modules ES6
+    "type": "module",
+    // Scripts npm pour le développement et la production
+    "scripts": {
+        "build": "vite build",  // Compile les assets pour la production
+        "dev": "vite"          // Lance le serveur de développement
+    },
+    // Dépendances de développement
+    "devDependencies": {
+        "@tailwindcss/vite": "^4.0.0",    // Plugin Vite pour Tailwind CSS
+        "autoprefixer": "^10.4.20",       // Ajoute les préfixes vendeurs aux règles CSS
+        "axios": "^1.7.4",                // Client HTTP pour les requêtes API
+        "concurrently": "^9.0.1",         // Exécute plusieurs commandes en parallèle
+        "laravel-vite-plugin": "^1.2.0",  // Intégration de Vite avec Laravel
+        "postcss": "^8.5.3",             // Outil de transformation CSS
+        "tailwindcss": "^4.0.11",        // Framework CSS utilitaire
+        "vite": "^6.0.11"                // Outil de build moderne
+    }
+}
